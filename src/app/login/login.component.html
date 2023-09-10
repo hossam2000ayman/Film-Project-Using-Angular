@@ -1,0 +1,21 @@
+<div class="login-container">
+  <img class="film" src="assets/image/film.png" alt="">
+  <div class="logo">Movie Web</div>
+  <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum et culpa atque necessitatibus. Ad molestias, necessitatibus ut magnam, beatae provident sint veritatis voluptatum culpa fugiat amet commodi repudiandae laudantium.</div>
+
+  <div class="login-form">
+    <div class="form-group">
+      <label for="userName">User Name</label>
+      <input type="text" name="userName" class="form-control" [(ngModel)]="usernameText" />
+    </div>
+
+    <div class="form-group">
+      <label for="password" class="boldText">Password</label>
+      <input type="password" name="password" class="form-control" [(ngModel)]="passwordText" />
+    </div>
+    <div class="btn-container" style="position: relative;">
+      <div class="error" style="color: red;position: absolute; top: 32px; right: 0px;">{{errorMessage}}</div>
+      <button class="btn btn-dark" style="margin-top: 10px;" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>

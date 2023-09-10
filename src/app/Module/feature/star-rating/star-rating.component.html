@@ -1,0 +1,10 @@
+<ng-template #star let-fill="fill">
+  <span class="star" [class.full]="fill === 100">
+    <span class="half" [style.width.%]="fill">&hearts;</span>
+    &hearts;
+  </span>
+</ng-template>
+<ngb-rating [(rate)]="rating"
+[starTemplate]="star"
+[readonly]="isReadOnly"
+[max]="5"></ngb-rating>
